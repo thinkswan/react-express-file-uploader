@@ -1,10 +1,12 @@
 import React, { Fragment, useState } from "react"
+import Message from "./Message"
 import axios from "axios"
 
 const FileUpload = props => {
   const [file, setFile] = useState("")
   const [filename, setFilename] = useState("Choose file")
   const [uploadedFile, setUploadedFile] = useState({})
+  const [message, setMessage] = useState("")
 
   const onChange = e => {
     const fileObj = e.target.files[0]
@@ -29,17 +31,20 @@ const FileUpload = props => {
       const { fileName, filePath } = res.data
 
       setUploadedFile({ fileName, filePath })
+      setMessage("File uploaded")
     } catch (e) {
       if (e.response.status === 500) {
-        return console.log("Server error")
+        return setMessage("Server error")
       }
 
-      return console.log(e.response.data.msg)
+      return setMessage(e.response.data.msg)
     }
   }
 
   return (
     <Fragment>
+      {message ? <Message message={message} /> : null}
+
       <form onSubmit={onSubmit}>
         <div className="custom-file mb-4">
           <input
