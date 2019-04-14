@@ -1,0 +1,7 @@
+{
+  "name": "react-express-file-uploader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Graham Swan <thinkswan@gmail.com>",
+  "license": "MIT"
+}
