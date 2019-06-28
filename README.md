@@ -1,5 +1,13 @@
 # react-express-file-uploader
 
-This tutorial is based on the following:
+A React app for uploading files to an Express server.
 
-- [Traversy Media: React File Uploader With Express (Using React Hooks)](https://www.youtube.com/watch?v=b6Oe2puTdMQ)
+Based on the following tutorial: [Traversy Media: React File Uploader With Express (Using React Hooks)](https://www.youtube.com/watch?v=b6Oe2puTdMQ)
+
+## Get started
+
+```
+yarn
+yarn dev
+open http://localhost:3000/
+```
