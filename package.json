@@ -1,5 +1,6 @@
 {
   "name": "react-express-file-uploader",
+  "description": "A React app for uploading files to an Express server.",
   "version": "1.0.0",
   "main": "server.js",
   "author": "Graham Swan <thinkswan@gmail.com>",
