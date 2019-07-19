@@ -8,7 +8,7 @@ Based on the following tutorial: [Traversy Media: React File Uploader With Expre
 
 ```
 yarn
-cd client/ && yarn cd ../ # Run `yarn` in `client/` to install client dependencies
+cd client/ && yarn && cd ../ # Run `yarn` in `client/` to install client dependencies
 yarn dev
 open http://localhost:3000/
 ```
